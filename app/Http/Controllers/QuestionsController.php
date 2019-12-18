@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Questions;
+use App\Question;
 use Illuminate\Http\Request;
 
 class QuestionsController extends Controller
@@ -14,10 +14,12 @@ class QuestionsController extends Controller
      */
     public function index()
     {
-        $questions = Questions::latest()->paginate(5);
+        $questions = Question::latest()->paginate(5);
 
-            return view('questions.index', compact('questions'));
+        return view('questions.index', compact('questions'));
+
     }
+
 
     /**
      * Show the form for creating a new resource.
@@ -46,7 +48,7 @@ class QuestionsController extends Controller
      * @param  \App\Questions  $questions
      * @return \Illuminate\Http\Response
      */
-    public function show(Questions $questions)
+    public function show(Question $questions)
     {
         //
     }
@@ -57,7 +59,7 @@ class QuestionsController extends Controller
      * @param  \App\Questions  $questions
      * @return \Illuminate\Http\Response
      */
-    public function edit(Questions $questions)
+    public function edit(Question $questions)
     {
         //
     }
@@ -69,7 +71,7 @@ class QuestionsController extends Controller
      * @param  \App\Questions  $questions
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Questions $questions)
+    public function update(Request $request, Question $questions)
     {
         //
     }
@@ -80,7 +82,7 @@ class QuestionsController extends Controller
      * @param  \App\Questions  $questions
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Questions $questions)
+    public function destroy(Question $questions)
     {
         //
     }
