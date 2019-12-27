@@ -33,7 +33,7 @@ class Question extends Model
                 return "answered-accepted";
             }
                 return "answered";
-        }
+        } 
         return "unanswered";
     }
     public function getBodyHtmlAttribute(){
