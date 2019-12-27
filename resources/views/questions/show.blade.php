@@ -23,7 +23,7 @@
                             <div class="media mt-2">
                                 <a href="{{$question->user->url}}" class="pr-2">
                                     <img src="{{$question->user->avatar}}">
-                                </a>
+                                </a> 
                                 <div class="media-body mt-1">
                                     <a href="{{$question->user->url}}">{{$question->user->name}}</a>
                                 </div>
